@@ -21,6 +21,12 @@ public class Reimburser {
 	}
 		
 	public int getFullDays(int totalDays) {
+		if (totalDays == 1) {
+			return totalDays;
+		}
+		else if (totalDays == 2) {
+			return totalDays;
+		}
 		return totalDays - 2;		
 	}
 	

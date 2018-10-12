@@ -45,6 +45,20 @@ class ReimburserTest {
 	}
 	
 	@Test
+	void getFullDays_oneday() {
+		int total = 1;
+		int result = r.getFullDays(total);
+		assertEquals(1, result);
+	}
+	
+	@Test
+	void getFullDays_twodays() {
+		int total = 2;
+		int result = r.getFullDays(total);
+		assertEquals(2, result);
+	}	
+	
+	@Test
 	void areDatesEqual_happypath() {
 		LocalDate startDate = LocalDate.parse("2015-09-01");
 		LocalDate endDate = LocalDate.parse("2015-09-01");
